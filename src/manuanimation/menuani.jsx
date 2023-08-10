@@ -18,25 +18,27 @@ function MenuAnimation(props) {
 
   return (
     <div className="menuani-container">
-      <ul className="list-box">
-        {menuList.map((item, idx) => {
-          return (
-            <li
-              className={idx === listIdx ? `list active` : `list`}
-              key={idx}
-              onClick={(e) => clickHandle(e, idx)}
-            >
-              <a href="#">
-                <span className="icon">
-                  <ion-icon name={`${item.icon}-outline`}></ion-icon>
-                </span>
-                <span className="text">{item.name}</span>
-              </a>
-            </li>
-          );
-        })}
-        <div className="indicator"></div>
-      </ul>
+      <div className="all-box">
+        <ul className="list-box">
+          {menuList.map((item, idx) => {
+            return (
+              <li
+                className={idx === listIdx ? `list active` : `list`}
+                key={idx}
+                onClick={(e) => clickHandle(e, idx)}
+              >
+                <a href="#">
+                  <span className="icon">
+                    <ion-icon name={`${item.icon}-outline`}></ion-icon>
+                  </span>
+                  <span className="text">{item.name}</span>
+                </a>
+              </li>
+            );
+          })}
+          <div className="indicator"></div>
+        </ul>
+      </div>
     </div>
   );
 }
