@@ -7,7 +7,7 @@ let numberList = [
   { no: 1, name: "ChangeCursor", img: changecursorImg },
   { no: 2, name: "MenuAnimation", img: changecursorImg },
   { no: 3, name: "NeonLightBtn", img: changecursorImg },
-  { no: 4, name: "hihihi", img: changecursorImg },
+  { no: 4, name: "IsometricMenu", img: changecursorImg },
   { no: 5, name: "WWWWW", img: changecursorImg },
 ];
 let prevNumber = numberList.slice(3);
