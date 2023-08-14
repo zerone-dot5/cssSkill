@@ -2,13 +2,17 @@ import React, { useState, useEffect } from "react";
 import "./main.css";
 import { Link } from "react-router-dom";
 import changecursorImg from "./img/changecursor.gif";
+import isometricImg from "./img/isometric.gif";
+import menuImg from "./img/menu.gif";
+import neonImg from "./img/neon.gif";
+import rainImg from "./img/rain.gif";
 
 let numberList = [
   { no: 1, name: "ChangeCursor", img: changecursorImg },
-  { no: 2, name: "MenuAnimation", img: changecursorImg },
-  { no: 3, name: "NeonLightBtn", img: changecursorImg },
-  { no: 4, name: "IsometricMenu", img: changecursorImg },
-  { no: 5, name: "WWWWW", img: changecursorImg },
+  { no: 2, name: "MenuAnimation", img: menuImg },
+  { no: 3, name: "NeonLightBtn", img: neonImg },
+  { no: 4, name: "IsometricMenu", img: isometricImg },
+  { no: 5, name: "TextRain", img: rainImg },
 ];
 let prevNumber = numberList.slice(3);
 let nextNumber = numberList.slice(0, 2);

@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuAnimation from "./manuanimation/menuani";
 import Neonlightbtn from "./neonlightbtn/neonlightbtn";
 import Isometricmenu from "./isometricmenu/isometricmenu";
+import TextRain from "./textrain/textrain";
 import Arrow from "./arrow";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/menuanimation" element={<MenuAnimation />} />
           <Route path="/neonlightbtn" element={<Neonlightbtn />} />
           <Route path="/isometricmenu" element={<Isometricmenu />} />
+          <Route path="/textrain" element={<TextRain />} />
         </Routes>
       </div>
     </BrowserRouter>
