@@ -13,13 +13,15 @@ let numberList = [
   { no: 3, name: "NeonLightBtn", img: neonImg },
   { no: 4, name: "IsometricMenu", img: isometricImg },
   { no: 5, name: "TextRain", img: rainImg },
+  { no: 6, name: "NeonText", img: rainImg },
+  { no: 7, name: "7", img: rainImg },
 ];
 let prevNumber = numberList.slice(3);
 let nextNumber = numberList.slice(0, 2);
 let List = [...prevNumber, ...numberList, ...nextNumber];
 
 function Main(props) {
-  const [count, setCount] = useState(2);
+  const [count, setCount] = useState(4);
   const [countTop, setCountTop] = useState(283);
   const [btn, setBtn] = useState(false);
   const [EclientY, setEclientY] = useState(null);
@@ -52,21 +54,23 @@ function Main(props) {
     }
   };
 
+  console.log(count);
+
   useEffect(() => {
-    if (count === 1) {
+    if (count === 2) {
       setTimeout(() => {
         setTransition("none");
-        setCountTop(-283);
-        setCount(6);
+        setCountTop(-424.5);
+        setCount(9);
       }, 1000);
       setTimeout(() => {
         setTransition("1s all");
       }, 1100);
-    } else if (count === 7) {
+    } else if (count === 10) {
       setTimeout(() => {
         setTransition("none");
-        setCountTop(283);
-        setCount(2);
+        setCountTop(424.5);
+        setCount(3);
       }, 1000);
       setTimeout(() => {
         setTransition("1s all");

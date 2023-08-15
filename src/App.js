@@ -7,6 +7,7 @@ import Neonlightbtn from "./neonlightbtn/neonlightbtn";
 import Isometricmenu from "./isometricmenu/isometricmenu";
 import TextRain from "./textrain/textrain";
 import Arrow from "./arrow";
+import NeonText from "./neontext/neontext";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/neonlightbtn" element={<Neonlightbtn />} />
           <Route path="/isometricmenu" element={<Isometricmenu />} />
           <Route path="/textrain" element={<TextRain />} />
+          <Route path="/neontext" element={<NeonText />} />
         </Routes>
       </div>
     </BrowserRouter>
