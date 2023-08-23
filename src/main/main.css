@@ -110,6 +110,12 @@
   opacity: 1;
   transform: scale(1.2);
 }
+.main-ul .main-list.black:hover {
+  box-shadow: 10px 10px 35px rgba(255, 255, 255, 0.15);
+  filter: blur(0px);
+  opacity: 1;
+  transform: scale(1.2);
+}
 
 .main-imgBx {
   position: relative;
@@ -140,6 +146,14 @@
   position: absolute;
   right: -50px;
   color: #03a9f4;
+  transition: 0.5s;
+  font-size: 2em;
+}
+
+.main-list .main-content .rank.black {
+  position: absolute;
+  right: -50px;
+  color: #f4bc03;
   transition: 0.5s;
   font-size: 2em;
 }

@@ -1,10 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./textrain.css";
+import Rain from "./rain";
 
-function Textrain(props) {
+let rainArr = [];
+
+function Textrain({ active, activeHandle }) {
   const [shadow, setShadow] = useState("none");
-  const [active, setActive] = useState("");
+  const [rainArrs, setRainArrs] = useState(rainArr);
+
   const interval = useRef();
+  const location = useLocation();
 
   function randomText() {
     let text = "abcdefghijklmnopqrstuvwxyz0123456789";
@@ -17,13 +23,13 @@ function Textrain(props) {
     let left = Math.floor(Math.random() * 310);
     let size = Math.random() * 1.5;
     let duration = Math.random() * 1;
-
     e.classList.add("cloud-text");
     cloud.appendChild(e);
     e.innerHTML = randomText();
     e.style.left = left + "px";
     e.style.fontSize = 0.5 + size + "em";
     e.style.animationDirection = 1 + duration + "s";
+
     setTimeout(() => {
       cloud.removeChild(e);
     }, 2000);
@@ -31,7 +37,7 @@ function Textrain(props) {
 
   let drop;
   const clickHandle = () => {
-    active === "" ? setActive("active") : setActive("");
+    active === "" ? activeHandle("active") : activeHandle("");
   };
 
   useEffect(() => {
@@ -49,7 +55,11 @@ function Textrain(props) {
   return (
     <div className="tr-container">
       <div className="trbox">
-        <div className={`cloud ${active}`} onClick={clickHandle}></div>
+        <div className={`cloud ${active}`} onClick={clickHandle}>
+          {/* {rainArrs.map((item, idx) => {
+            return <Rain key={idx} />;
+          })} */}
+        </div>
       </div>
     </div>
   );

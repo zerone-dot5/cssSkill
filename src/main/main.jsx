@@ -20,21 +20,23 @@ let numberList = [
   { no: 4, name: "IsometricMenu", img: img4, ex: "3D Menu" },
   { no: 5, name: "TextRain", img: img5, ex: "text Rain" },
   { no: 6, name: "NeonText", img: img6, ex: "soft neon text" },
-  { no: 7, name: "7", img: img6, ex: "not" },
+  { no: 7, name: "StickyMemo", img: img6, ex: "Color Sticky Memo" },
   { no: 8, name: "8", img: img6, ex: "not" },
 ];
 
 let WhiteTheme = {
   bgColor: "#f5f5f5",
   listBoxColor: "#fff",
+  fontColor: "#333",
 };
 
 let BlackTheme = {
   bgColor: "#333",
-  listBoxColor: "#000",
+  listBoxColor: "#444",
+  fontColor: "#f5f5f5",
 };
 
-function Main(props) {
+function Main() {
   const [toggleClass, setToggleClass] = useState("");
   const [toggleColor, setToggleColor] = useState(WhiteTheme);
 
@@ -45,11 +47,19 @@ function Main(props) {
       : setToggleColor(WhiteTheme);
   };
 
-  console.log(toggleColor.bgColor);
+  const location = useLocation();
+
+  let currentPath = "";
+  useEffect(() => {
+    if (currentPath === location.pathname) window.location.reload();
+    if (location.pathname === "/") {
+    }
+  }, [location]);
+
   return (
     <div className="main-container" style={{ background: toggleColor.bgColor }}>
       <div className="main-box">
-        <h3>
+        <h3 style={{ color: toggleColor.fontColor }}>
           Js <small>&</small> Css <small>&</small> React Design Skill
         </h3>
         <div className="main-themebox">
@@ -65,16 +75,21 @@ function Main(props) {
           {numberList.map((item, idx) => {
             return (
               <Link key={idx} to={`${item.name.toLowerCase()}`}>
-                <li className="main-list">
+                <li
+                  className={`main-list ${toggleClass}`}
+                  style={{ background: toggleColor.listBoxColor }}
+                >
                   <div className="main-imgBx">
                     <img src={item.img} />
                   </div>
                   <div className="main-content">
-                    <h2 className="rank">
+                    <h2 className={`rank ${toggleClass}`}>
                       <small>#</small>
                       {item.no}
                     </h2>
-                    <h4>{item.name}</h4>
+                    <h4 style={{ color: toggleColor.fontColor }}>
+                      {item.name}
+                    </h4>
                     <p>{item.ex}</p>
                   </div>
                 </li>
