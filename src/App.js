@@ -13,6 +13,7 @@ import Arrow from "./arrow";
 import NeonText from "./neontext/neontext";
 
 import Stickymemo from "./stickymemo/stickymemo";
+import Futuristiccard from "./futuristiccard/futuristiccard";
 
 function App() {
   const [active, setActive] = useState("");
@@ -38,6 +39,7 @@ function App() {
           />
           <Route path="/neontext" element={<NeonText />} />
           <Route path="/stickymemo" element={<Stickymemo />} />
+          <Route path="futuristiccard" element={<Futuristiccard />} />
         </Routes>
       </div>
     </BrowserRouter>

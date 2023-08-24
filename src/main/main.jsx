@@ -7,6 +7,8 @@ import img3 from "../img/3.png";
 import img4 from "../img/4.png";
 import img5 from "../img/5.png";
 import img6 from "../img/6.png";
+import img7 from "../img/7.png";
+import img8 from "../img/8.png";
 
 let numberList = [
   {
@@ -20,8 +22,8 @@ let numberList = [
   { no: 4, name: "IsometricMenu", img: img4, ex: "3D Menu" },
   { no: 5, name: "TextRain", img: img5, ex: "text Rain" },
   { no: 6, name: "NeonText", img: img6, ex: "soft neon text" },
-  { no: 7, name: "StickyMemo", img: img6, ex: "Color Sticky Memo" },
-  { no: 8, name: "8", img: img6, ex: "not" },
+  { no: 7, name: "StickyMemo", img: img7, ex: "Color Sticky Memo" },
+  { no: 8, name: "FuturisticCard", img: img8, ex: "futuristic Animated card" },
 ];
 
 let WhiteTheme = {

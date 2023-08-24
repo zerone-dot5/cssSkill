@@ -44,6 +44,7 @@
   padding: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
   font-family: "Handlee", cursive;
+  transform: rotate(10deg);
 }
 
 .sm-box .notes .note::before {
@@ -85,7 +86,7 @@
   position: relative;
   width: var(--size);
   height: var(--size);
-  z-index: 100;
+  z-index: 50;
 }
 
 .createBox textarea {
