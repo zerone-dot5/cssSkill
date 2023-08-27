@@ -20,7 +20,7 @@
   position: relative;
   font-size: 1.75em;
   color: #333;
-
+  margin-top: 100px;
   margin-bottom: 20px;
 
   text-align: center;
@@ -144,7 +144,7 @@
 }
 .main-list .main-content .rank {
   position: absolute;
-  right: -50px;
+  right: -55px;
   color: #03a9f4;
   transition: 0.5s;
   font-size: 2em;

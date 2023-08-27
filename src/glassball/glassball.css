@@ -1,0 +1,162 @@
+:root {
+  --g: #04fc43;
+  --y: #fee800;
+  --r: #ff2972;
+  --b: #03a9f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #132730;
+}
+
+.ball {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  box-shadow: inset 0 25px 70px rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(#0003, #0003, transparent, transparent);
+  /* z-index: -1; */
+}
+
+.ball::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(crack.png);
+  background-position: center;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.ball:hover::after {
+  opacity: 1;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  animation: animategb 15s linear infinite, particles 4s ease-in-out infinite;
+}
+
+.circle:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  animation: animategb 5s linear infinite, particles 6s ease-in-out infinite;
+}
+.circle:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  animation: animategb 10s linear infinite, particles 7s ease-in-out infinite;
+}
+.circle:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  animation: animategb 7s linear infinite, particles 10s ease-in-out infinite;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--b);
+  box-shadow: 0 0 20px var(--b), 0 0 60px var(--b), 40px -70px 0 var(--b),
+    40px -70px 20px var(--b), 70px -70px 0 var(--b), 70px -70px 20px var(--b),
+    -70px -150px 0 var(--b), -70px -150px 20px var(--b);
+  animation: animategb 10s linear infinite;
+  border-radius: 50%;
+}
+
+.circle:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--y);
+  box-shadow: 0 0 20px var(--y), 0 0 60px var(--y), 40px -70px 0 var(--y),
+    40px -70px 20px var(--y), 70px -70px 0 var(--y), 70px -70px 20px var(--y),
+    -70px -150px 0 var(--y), -70px -150px 20px var(--y);
+  animation: animategb 10s linear infinite;
+  border-radius: 50%;
+}
+
+.circle:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--r);
+  box-shadow: 0 0 20px var(--r), 0 0 60px var(--r), 40px -70px 0 var(--r),
+    40px -70px 20px var(--r), 70px -70px 0 var(--r), 70px -70px 20px var(--r),
+    -70px -150px 0 var(--r), -70px -150px 20px var(--r);
+  animation: animategb 10s linear infinite;
+  border-radius: 50%;
+}
+.circle:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--g);
+  box-shadow: 0 0 20px var(--g), 0 0 60px var(--g), 40px -70px 0 var(--g),
+    40px -70px 20px var(--g), 70px -70px 0 var(--g), 70px -70px 20px var(--g),
+    -70px -150px 0 var(--g), -70px -150px 20px var(--g);
+  animation: animategb 10s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes animategb {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes particles {
+  0%,
+  100% {
+    scale: 0.5;
+  }
+  50% {
+    scale: 1.25;
+  }
+}

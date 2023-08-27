@@ -9,6 +9,8 @@ import img5 from "../img/5.png";
 import img6 from "../img/6.png";
 import img7 from "../img/7.png";
 import img8 from "../img/8.png";
+import img9 from "../img/9.png";
+import img10 from "../img/10.png";
 
 let numberList = [
   {
@@ -24,6 +26,13 @@ let numberList = [
   { no: 6, name: "NeonText", img: img6, ex: "soft neon text" },
   { no: 7, name: "StickyMemo", img: img7, ex: "Color Sticky Memo" },
   { no: 8, name: "FuturisticCard", img: img8, ex: "futuristic Animated card" },
+  { no: 9, name: "ProductCard", img: img9, ex: "Product Card Hover Effect" },
+  {
+    no: 10,
+    name: "GlassBall",
+    img: img10,
+    ex: "Glass Ball Particle Animation",
+  },
 ];
 
 let WhiteTheme = {
