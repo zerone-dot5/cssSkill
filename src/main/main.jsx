@@ -33,6 +33,8 @@ let numberList = [
     img: img10,
     ex: "Glass Ball Particle Animation",
   },
+  { no: 11, name: "ClickPaint", img: img9, ex: "Paint Background by Clicking" },
+  { no: 12, name: "ProductCard", img: img9, ex: "Product Card Hover Effect" },
 ];
 
 let WhiteTheme = {

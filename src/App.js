@@ -16,6 +16,7 @@ import Stickymemo from "./stickymemo/stickymemo";
 import Futuristiccard from "./futuristiccard/futuristiccard";
 import Productcard from "./productcard/productcard";
 import Glassball from "./glassball/glassball";
+import Clickpaint from "./clickpaint/clickpaint";
 
 function App() {
   const [active, setActive] = useState("");
@@ -44,6 +45,7 @@ function App() {
           <Route path="/futuristiccard" element={<Futuristiccard />} />
           <Route path="/productcard" element={<Productcard />} />
           <Route path="/glassball" element={<Glassball />} />
+          <Route path="/clickpaint" element={<Clickpaint />} />
         </Routes>
       </div>
     </BrowserRouter>
