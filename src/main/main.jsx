@@ -11,6 +11,8 @@ import img7 from "../img/7.png";
 import img8 from "../img/8.png";
 import img9 from "../img/9.png";
 import img10 from "../img/10.png";
+import img11 from "../img/11.png";
+import img12 from "../img/12.png";
 
 let numberList = [
   {
@@ -33,8 +35,13 @@ let numberList = [
     img: img10,
     ex: "Glass Ball Particle Animation",
   },
-  { no: 11, name: "ClickPaint", img: img9, ex: "Paint Background by Clicking" },
-  { no: 12, name: "ProductCard", img: img9, ex: "Product Card Hover Effect" },
+  {
+    no: 11,
+    name: "ClickPaint",
+    img: img11,
+    ex: "Paint Background by Clicking",
+  },
+  { no: 12, name: "GalleryHover", img: img12, ex: "Image Gallery Hover" },
 ];
 
 let WhiteTheme = {

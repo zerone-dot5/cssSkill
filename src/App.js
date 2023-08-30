@@ -17,6 +17,7 @@ import Futuristiccard from "./futuristiccard/futuristiccard";
 import Productcard from "./productcard/productcard";
 import Glassball from "./glassball/glassball";
 import Clickpaint from "./clickpaint/clickpaint";
+import Gallery from "./galleryHover/gallery";
 
 function App() {
   const [active, setActive] = useState("");
@@ -46,6 +47,7 @@ function App() {
           <Route path="/productcard" element={<Productcard />} />
           <Route path="/glassball" element={<Glassball />} />
           <Route path="/clickpaint" element={<Clickpaint />} />
+          <Route path="/galleryhover" element={<Gallery />} />
         </Routes>
       </div>
     </BrowserRouter>
