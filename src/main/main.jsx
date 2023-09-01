@@ -13,6 +13,8 @@ import img9 from "../img/9.png";
 import img10 from "../img/10.png";
 import img11 from "../img/11.png";
 import img12 from "../img/12.png";
+import img13 from "../img/13.png";
+import img14 from "../img/14.png";
 
 let numberList = [
   {
@@ -42,6 +44,8 @@ let numberList = [
     ex: "Paint Background by Clicking",
   },
   { no: 12, name: "GalleryHover", img: img12, ex: "Image Gallery Hover" },
+  { no: 13, name: "RadialMenu", img: img13, ex: "Select Radial Menu" },
+  { no: 14, name: "ScrollEvent", img: img14, ex: "Scroll To Reveal" },
 ];
 
 let WhiteTheme = {

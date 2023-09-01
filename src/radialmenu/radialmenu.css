@@ -1,0 +1,57 @@
+.rm-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2f363e;
+}
+
+.menu {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transition: 0.5s;
+  transform-origin: 140px;
+
+  transform: rotate(0deg) translateX(110px);
+}
+
+.menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+
+.menu .toggle {
+  width: 60px;
+  height: 60px;
+  background: #2f363e;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10000;
+  font-size: 2em;
+  transition: transform 1.25s;
+}
+
+.menu.active .toggle {
+  transform: rotate(315deg);
+}

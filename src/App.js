@@ -11,14 +11,14 @@ import Isometricmenu from "./isometricmenu/isometricmenu";
 import TextRain from "./textrain/textrain";
 import Arrow from "./arrow";
 import NeonText from "./neontext/neontext";
-
 import Stickymemo from "./stickymemo/stickymemo";
 import Futuristiccard from "./futuristiccard/futuristiccard";
 import Productcard from "./productcard/productcard";
 import Glassball from "./glassball/glassball";
 import Clickpaint from "./clickpaint/clickpaint";
 import Gallery from "./galleryHover/gallery";
-
+import Radialmenu from "./radialmenu/radialmenu";
+import Scrollevent from "./scrollevent/scrollevent";
 function App() {
   const [active, setActive] = useState("");
 
@@ -48,6 +48,8 @@ function App() {
           <Route path="/glassball" element={<Glassball />} />
           <Route path="/clickpaint" element={<Clickpaint />} />
           <Route path="/galleryhover" element={<Gallery />} />
+          <Route path="/radialmenu" element={<Radialmenu />} />
+          <Route path="/scrollevent" element={<Scrollevent />} />
         </Routes>
       </div>
     </BrowserRouter>
