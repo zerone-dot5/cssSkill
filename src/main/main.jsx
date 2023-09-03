@@ -15,6 +15,7 @@ import img11 from "../img/11.png";
 import img12 from "../img/12.png";
 import img13 from "../img/13.png";
 import img14 from "../img/14.png";
+import img15 from "../img/15.png";
 
 let numberList = [
   {
@@ -46,6 +47,8 @@ let numberList = [
   { no: 12, name: "GalleryHover", img: img12, ex: "Image Gallery Hover" },
   { no: 13, name: "RadialMenu", img: img13, ex: "Select Radial Menu" },
   { no: 14, name: "ScrollEvent", img: img14, ex: "Scroll To Reveal" },
+  { no: 15, name: "Cube3D", img: img15, ex: "3D Cube Animation" },
+  { no: 16, name: "ScrollEvent", img: img14, ex: "Scroll To Reveal" },
 ];
 
 let WhiteTheme = {

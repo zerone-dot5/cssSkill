@@ -19,6 +19,7 @@ import Clickpaint from "./clickpaint/clickpaint";
 import Gallery from "./galleryHover/gallery";
 import Radialmenu from "./radialmenu/radialmenu";
 import Scrollevent from "./scrollevent/scrollevent";
+import Cube3d from "./cube3d/cube3d";
 function App() {
   const [active, setActive] = useState("");
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/galleryhover" element={<Gallery />} />
           <Route path="/radialmenu" element={<Radialmenu />} />
           <Route path="/scrollevent" element={<Scrollevent />} />
+          <Route path="/cube3d" element={<Cube3d />} />
         </Routes>
       </div>
     </BrowserRouter>
