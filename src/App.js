@@ -21,6 +21,7 @@ import Radialmenu from "./radialmenu/radialmenu";
 import Scrollevent from "./scrollevent/scrollevent";
 import Cube3d from "./cube3d/cube3d";
 import MediaIcon from "./mediaicon/mediaicon";
+import Iconbg from "./iconbg/iconbg";
 function App() {
   const [active, setActive] = useState("");
 
@@ -54,6 +55,7 @@ function App() {
           <Route path="/scrollevent" element={<Scrollevent />} />
           <Route path="/cube3d" element={<Cube3d />} />
           <Route path="/mediaicon" element={<MediaIcon />} />
+          <Route path="/iconbackground" element={<Iconbg />} />
         </Routes>
       </div>
     </BrowserRouter>

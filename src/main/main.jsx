@@ -17,6 +17,7 @@ import img13 from "../img/13.png";
 import img14 from "../img/14.png";
 import img15 from "../img/15.png";
 import img16 from "../img/16.png";
+import img17 from "../img/17.png";
 
 let numberList = [
   {
@@ -55,6 +56,13 @@ let numberList = [
     img: img16,
     ex: "Layered Social Media Icon Hover",
   },
+  {
+    no: 17,
+    name: "IconBackground",
+    img: img17,
+    ex: "Icon Background Animation",
+  },
+  { no: 18, name: "Cube3D", img: img15, ex: "3D Cube Animation" },
 ];
 
 let WhiteTheme = {
