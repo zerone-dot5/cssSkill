@@ -16,6 +16,7 @@ import img12 from "../img/12.png";
 import img13 from "../img/13.png";
 import img14 from "../img/14.png";
 import img15 from "../img/15.png";
+import img16 from "../img/16.png";
 
 let numberList = [
   {
@@ -48,7 +49,12 @@ let numberList = [
   { no: 13, name: "RadialMenu", img: img13, ex: "Select Radial Menu" },
   { no: 14, name: "ScrollEvent", img: img14, ex: "Scroll To Reveal" },
   { no: 15, name: "Cube3D", img: img15, ex: "3D Cube Animation" },
-  { no: 16, name: "ScrollEvent", img: img14, ex: "Scroll To Reveal" },
+  {
+    no: 16,
+    name: "MediaIcon",
+    img: img16,
+    ex: "Layered Social Media Icon Hover",
+  },
 ];
 
 let WhiteTheme = {

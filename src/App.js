@@ -20,6 +20,7 @@ import Gallery from "./galleryHover/gallery";
 import Radialmenu from "./radialmenu/radialmenu";
 import Scrollevent from "./scrollevent/scrollevent";
 import Cube3d from "./cube3d/cube3d";
+import MediaIcon from "./mediaicon/mediaicon";
 function App() {
   const [active, setActive] = useState("");
 
@@ -52,6 +53,7 @@ function App() {
           <Route path="/radialmenu" element={<Radialmenu />} />
           <Route path="/scrollevent" element={<Scrollevent />} />
           <Route path="/cube3d" element={<Cube3d />} />
+          <Route path="/mediaicon" element={<MediaIcon />} />
         </Routes>
       </div>
     </BrowserRouter>
