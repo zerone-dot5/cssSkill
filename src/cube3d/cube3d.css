@@ -9,8 +9,8 @@
 
 .c3-cube {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   transition: 1s;
 }
 
@@ -36,8 +36,8 @@
 
 .c3-cube .big span {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   transform-style: preserve-3d;
   transition: 0.5s;
 }
@@ -55,9 +55,10 @@
 
 .c3-cobe2-container {
   transition: 1s;
+  transition-delay: 1s;
   position: relative;
   top: -80px;
-  transform: skewY(-20deg);
+
   animation: cube2Animate 5s linear infinite;
 }
 

@@ -27,7 +27,7 @@ function Cube3d(props) {
         style={
           stop === ""
             ? { opacity: 1, zIndex: 100 }
-            : { opacity: 0.5, zIndex: -5 }
+            : { transform: `scale(0)`, zIndex: -5, background: `#fff` }
         }
       >
         <div className="big">
@@ -40,11 +40,11 @@ function Cube3d(props) {
                     ? idx !== 4
                       ? {
                           background: item,
-                          transform: `rotateY(calc(90deg * ${idx})) translateZ(150px)`,
+                          transform: `rotateY(calc(90deg * ${idx})) translateZ(140px)`,
                         }
                       : {
                           background: "#7a00df",
-                          transform: `rotateX(90deg) translateZ(150px)`,
+                          transform: `rotateX(90deg) translateZ(140px)`,
                         }
                     : idx !== 4
                     ? {
@@ -52,13 +52,13 @@ function Cube3d(props) {
 
                         border: "10px solid #fff",
                         background: "transparent",
-                        transform: `rotateY(calc(90deg * ${idx})) translateZ(150px)`,
+                        transform: `rotateY(calc(90deg * ${idx})) translateZ(140px)`,
                       }
                     : {
                         boxShadow: `rgba(255, 255, 255, 1) 0px 0px 30px 0px , inset rgba(255, 255, 255, 1) 0px 0px 30px 0px`,
                         border: "10px solid #fff",
                         background: "transparent",
-                        transform: `rotateX(90deg) translateZ(150px)`,
+                        transform: `rotateX(90deg) translateZ(140px)`,
                       }
                 }
                 onMouseOver={HoverHandle}
@@ -73,8 +73,8 @@ function Cube3d(props) {
         className="c3-cobe2-container"
         style={
           stop === "stop"
-            ? { opacity: 1, zIndex: 100 }
-            : { opacity: 0, zIndex: -5 }
+            ? { transform: `scale(1) skewY(-20deg)`, zIndex: 100 }
+            : { transform: `scale(0) skewY(-20deg)`, zIndex: -5 }
         }
       >
         <div className="c3-cube2">
