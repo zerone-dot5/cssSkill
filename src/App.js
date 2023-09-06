@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import "./App.css";
 import ChangeCursor from "./changecursor/changeCursor";
-import Main from "./main/main";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuAnimation from "./manuanimation/menuani";
 import Neonlightbtn from "./neonlightbtn/neonlightbtn";
@@ -22,6 +22,7 @@ import Scrollevent from "./scrollevent/scrollevent";
 import Cube3d from "./cube3d/cube3d";
 import MediaIcon from "./mediaicon/mediaicon";
 import Iconbg from "./iconbg/iconbg";
+import Home from "./home/home";
 function App() {
   const [active, setActive] = useState("");
 
@@ -29,13 +30,12 @@ function App() {
     setActive(e);
   };
 
-  console.log(active);
   return (
     <BrowserRouter>
       <div className="App">
         <Arrow activeHandle={activeHandle} />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Home />} />
           <Route path="/changecursor" element={<ChangeCursor />} />
           <Route path="/menuanimation" element={<MenuAnimation />} />
           <Route path="/neonlightbtn" element={<Neonlightbtn />} />
@@ -56,6 +56,7 @@ function App() {
           <Route path="/cube3d" element={<Cube3d />} />
           <Route path="/mediaicon" element={<MediaIcon />} />
           <Route path="/iconbackground" element={<Iconbg />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,0 +1,312 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #161a23;
+  gap: 10px;
+}
+
+.homeC1-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+}
+
+.homeC1-main .home-nav {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.homeC1-main .home-nav:hover li {
+  background: #0f0;
+}
+
+.homeC1-main .home-nav li {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+}
+
+.homeC1-main .home-nav li span p {
+  font-size: 0em;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.homeC1-main .home-nav.active li {
+  width: 45px;
+  height: 45px;
+  background: #1f2536;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeC1-main .home-nav.active li span p {
+  font-size: 1em;
+  transition-delay: 0.5s;
+}
+
+.homeC1-main .home-nav.active li:hover span p {
+  color: #2dfc52;
+  transition-delay: 0s;
+  filter: drop-shadow(0 0 2px #2dfc52), drop-shadow(0 0 5px #2dfc52),
+    drop-shadow(0 0 15px #2dfc52);
+}
+
+.close1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: none;
+  transition: 0.5s;
+  transition: 0.4s;
+  pointer-events: none;
+  border-radius: 0%;
+}
+
+.close1.active {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  pointer-events: initial;
+  transition-delay: 0.8s;
+  background: #2dfc52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close1 ion-icon {
+  transition: 0.5s;
+  font-size: 2em;
+  scale: 0;
+  opacity: 0;
+  color: #10131c;
+}
+
+.close1.active ion-icon {
+  scale: 1;
+  opacity: 1;
+  transition-delay: 1s;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.homeC2-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+}
+
+.homeC2-main .home-nav {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.homeC2-main .home-nav:hover li {
+  background: rgb(0, 187, 255);
+}
+
+.homeC2-main .home-nav li {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+}
+
+.homeC2-main .home-nav li span p {
+  font-size: 0em;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.homeC2-main .home-nav.active li {
+  width: 45px;
+  height: 45px;
+  background: #1f2536;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeC2-main .home-nav.active li span p {
+  font-size: 1em;
+  transition-delay: 0.5s;
+}
+
+.homeC2-main .home-nav.active li:hover span p {
+  color: rgb(0, 106, 255);
+  transition-delay: 0s;
+  filter: drop-shadow(0 0 2px #006aff), drop-shadow(0 0 5px #006aff),
+    drop-shadow(0 0 15px #006aff);
+}
+
+.close2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: none;
+  transition: 0.5s;
+  transition: 0.4s;
+  pointer-events: none;
+  border-radius: 0%;
+}
+
+.close2.active.active {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  pointer-events: initial;
+  transition-delay: 0.8s;
+  background: #006aff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close2 ion-icon {
+  transition: 0.5s;
+  font-size: 2em;
+  scale: 0;
+  opacity: 0;
+  color: #10131c;
+}
+
+.close2.active ion-icon {
+  scale: 1;
+  opacity: 1;
+  transition-delay: 1s;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.homeC3-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+}
+
+.homeC3-main .home-nav {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.homeC3-main .home-nav:hover li {
+  background: rgb(204, 0, 255);
+}
+
+.homeC3-main .home-nav li {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+}
+
+.homeC3-main .home-nav li span p {
+  font-size: 0em;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.homeC3-main .home-nav.active li {
+  width: 45px;
+  height: 45px;
+  background: #1f2536;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeC3-main .home-nav.active li span p {
+  font-size: 1em;
+  transition-delay: 0.5s;
+}
+
+.homeC3-main .home-nav.active li:hover span p {
+  color: #c0f;
+  transition-delay: 0s;
+  filter: drop-shadow(0 0 2px #c0f), drop-shadow(0 0 5px #c0f),
+    drop-shadow(0 0 15px #c0f);
+}
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+.close3 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: none;
+  transition: 0.5s;
+  transition: 0.4s;
+  pointer-events: none;
+  border-radius: 0%;
+}
+
+.close3.active {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  pointer-events: initial;
+  transition-delay: 0.8s;
+  background: #c0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close3 ion-icon {
+  transition: 0.5s;
+  font-size: 2em;
+  scale: 0;
+  opacity: 0;
+  color: #10131c;
+}
+
+.close3.active ion-icon {
+  scale: 1;
+  opacity: 1;
+  transition-delay: 1s;
+}
