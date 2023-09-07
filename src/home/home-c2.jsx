@@ -11,7 +11,7 @@ let list = [
   { x: 1, y: 1, icon: "MI", name: "MediaIcon" },
 ];
 
-function HomeC2({ channel, channelHandle }) {
+function HomeC2({ channel, channelHandle, titleHandle }) {
   const [nav, setNav] = useState("");
   const [hover, setHover] = useState("");
 
@@ -22,13 +22,16 @@ function HomeC2({ channel, channelHandle }) {
 
   const closeHandle = () => {
     setNav("");
+    channelHandle("");
   };
 
-  const HoverHanle = () => {
+  const HoverHanle = (e, item) => {
     setHover("hover");
+    titleHandle(item.name);
   };
   const OutHandle = () => {
     setHover("");
+    titleHandle("");
   };
 
   useEffect(() => {
@@ -69,7 +72,7 @@ function HomeC2({ channel, channelHandle }) {
                       transitionDelay: `${0.1 * idx}s`,
                     }
               }
-              onMouseOver={HoverHanle}
+              onMouseOver={(e) => HoverHanle(e, item)}
               onMouseLeave={OutHandle}
             >
               <Link to={`${item.name.toLowerCase()}`}>

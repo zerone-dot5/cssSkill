@@ -12,7 +12,7 @@ let list = [
   { x: 1, y: 1, icon: "", name: "" },
 ];
 
-function HomeC3({ channel, channelHandle }) {
+function HomeC3({ channel, channelHandle, titleHandle }) {
   const [nav, setNav] = useState("");
   const [hover, setHover] = useState("");
 
@@ -23,13 +23,16 @@ function HomeC3({ channel, channelHandle }) {
 
   const closeHandle = () => {
     setNav("");
+    channelHandle("");
   };
 
-  const HoverHanle = () => {
+  const HoverHanle = (e, item) => {
     setHover("hover");
+    titleHandle(item.name);
   };
   const OutHandle = () => {
     setHover("");
+    titleHandle();
   };
 
   useEffect(() => {
@@ -71,7 +74,7 @@ function HomeC3({ channel, channelHandle }) {
                       transitionDelay: `${0.1 * idx}s`,
                     }
               }
-              onMouseOver={HoverHanle}
+              onMouseOver={(e) => HoverHanle(e, item)}
               onMouseLeave={OutHandle}
             >
               <Link to={`${item.name.toLowerCase()}`}>

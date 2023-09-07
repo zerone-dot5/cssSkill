@@ -12,7 +12,7 @@ let list = [
   { x: 1, y: 1, icon: "FC", name: "FuturisticCard" },
 ];
 
-function HomeC1({ channel, channelHandle }) {
+function HomeC1({ channel, channelHandle, titleHandle }) {
   const [nav, setNav] = useState("");
   const [hover, setHover] = useState("");
 
@@ -23,6 +23,7 @@ function HomeC1({ channel, channelHandle }) {
 
   const closeHandle = () => {
     setNav("");
+    channelHandle("");
   };
 
   useEffect(() => {
@@ -31,11 +32,13 @@ function HomeC1({ channel, channelHandle }) {
     }
   }, [channel]);
 
-  const HoverHanle = () => {
+  const HoverHanle = (e, item) => {
     setHover("hover");
+    titleHandle(item.name);
   };
   const OutHandle = () => {
     setHover("");
+    titleHandle("");
   };
 
   return (
@@ -71,7 +74,7 @@ function HomeC1({ channel, channelHandle }) {
                       transitionDelay: `${0.1 * idx}s`,
                     }
               }
-              onMouseOver={HoverHanle}
+              onMouseOver={(e) => HoverHanle(e, item)}
               onMouseLeave={OutHandle}
             >
               <Link to={`${item.name.toLowerCase()}`}>

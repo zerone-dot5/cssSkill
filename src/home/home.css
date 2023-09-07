@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 .home-container {
   display: flex;
   align-items: center;
@@ -6,6 +10,123 @@
   min-height: 100vh;
   background: #161a23;
   gap: 10px;
+}
+
+.titlebox {
+  position: absolute;
+  width: 700px;
+  height: 200px;
+
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlebox .titlebox-channel1 {
+  width: 100%;
+  font-size: 4em;
+  color: #2f384c;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.7em;
+  animation: homeAnimate1 5s linear infinite;
+  outline: none;
+}
+@keyframes homeAnimate1 {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80% {
+    color: #2f384c;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #2dfc52, 0 0 20px #2dfc52, 0 0 40px #2dfc52,
+      0 0 80px #2dfc52, 0 0 100px #2dfc52;
+  }
+}
+.titlebox .titlebox-channel2 {
+  width: 100%;
+  font-size: 4em;
+  color: #2f384c;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.7em;
+  animation: homeAnimate2 5s linear infinite;
+}
+@keyframes homeAnimate2 {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80% {
+    color: #2f384c;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 100px #03bcf4;
+  }
+}
+.titlebox .titlebox-channel3 {
+  width: 100%;
+  font-size: 4em;
+  color: #2f384c;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 0.7em;
+  animation: homeAnimate3 5s linear infinite;
+}
+@keyframes homeAnimate3 {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80% {
+    color: #2f384c;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #c0f, 0 0 20px #c0f, 0 0 40px #c0f, 0 0 80px #c0f,
+      0 0 100px #c0f;
+  }
 }
 
 .homeC1-main {
