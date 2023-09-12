@@ -36,7 +36,9 @@ function Home(props) {
         titleHandle={titleHandle}
       />
       <div className="titlebox">
-        <h2 className={`titlebox-channel${channel}`}>{title}</h2>
+        <h2 className={`titlebox-channel${channel}`}>
+          {channel === "" ? "" : title}
+        </h2>
       </div>
     </div>
   );
