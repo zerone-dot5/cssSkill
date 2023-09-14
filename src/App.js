@@ -24,6 +24,7 @@ import MediaIcon from "./mediaicon/mediaicon";
 import Iconbg from "./iconbg/iconbg";
 import Home from "./home/home";
 import Infinityloading from "./infinityloading/infinityloading";
+import Randommove from "./randommove/randommove";
 
 function App() {
   const [active, setActive] = useState("");
@@ -59,6 +60,7 @@ function App() {
           <Route path="/mediaicon" element={<MediaIcon />} />
           <Route path="/iconbackground" element={<Iconbg />} />
           <Route path="/infinityloading" element={<Infinityloading />} />
+          <Route path="/randommove" element={<Randommove />} />
         </Routes>
       </div>
     </BrowserRouter>

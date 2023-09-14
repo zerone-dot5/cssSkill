@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 let list = [
   { x: -1, y: 0, icon: "IG", name: "IconBackGround" },
   { x: 1, y: 0, icon: "IL", name: "InfinityLoading" },
-  { x: 0, y: -1, icon: "", name: "" },
+  { x: 0, y: -1, icon: "RMO", name: "RandomMove" },
   { x: 0, y: 1, icon: "", name: "" },
   { x: -1, y: 1, icon: "", name: "" },
   { x: -1, y: -1, icon: "", name: "" },

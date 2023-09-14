@@ -2,7 +2,6 @@ import React from "react";
 import "./infinityloading.css";
 
 let circleList = Array(21).fill("");
-console.log(circleList);
 
 function Infinityloading(props) {
   return (

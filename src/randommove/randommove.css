@@ -1,0 +1,103 @@
+.rmo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #001f25;
+}
+.rmo-container h2 {
+  position: absolute;
+  font-size: 10em;
+  color: #fff;
+  background-color: transparent;
+  transition: 1s all;
+  opacity: 0.2;
+}
+.rmo-loader {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.rmo-loader span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rmo-loader span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: transparent;
+  border: 4px solid #00efff;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px #00efff, -30px -30px 0px #00efff,
+    -30px -30px 20px #00efff, 30px 30px 0px #00efff, 30px 30px 20px #00efff,
+    30px -30px 0px #00efff, 30px -30px 20px #00efff, -30px 30px 0px #00efff,
+    -30px 30px 20px #00efff;
+  animation: rmoAnimate 5s linear infinite;
+  transform-origin: 20px;
+  transition: 2s;
+}
+.rmo-loader:hover span::before {
+  transform-origin: 250px;
+  box-shadow: 0 0 20px #00efff, -100px -100px 0px #00efff,
+    -100px -100px 20px #00efff, 100px 100px 0px #00efff,
+    100px 100px 20px #00efff, 100px -100px 0px #00efff,
+    100px -100px 20px #00efff, -100px 100px 0px #00efff,
+    -100px 100px 20px #00efff;
+}
+
+.rmo-loader .active:nth-child(1):before {
+  animation-delay: calc(-0.25s * 1);
+}
+.rmo-loader .active:nth-child(2):before {
+  animation-delay: calc(-0.25s * 2);
+}
+.rmo-loader .active:nth-child(3):before {
+  animation-delay: calc(-0.25s * 3);
+}
+.rmo-loader .active:nth-child(4):before {
+  animation-delay: calc(-0.25s * 4);
+}
+.rmo-loader .active:nth-child(5):before {
+  animation-delay: calc(-0.25s * 5);
+}
+
+.rmo-loader .active:nth-child(6):before {
+  animation-delay: calc(-0.25s * 6);
+}
+.rmo-loader .active:nth-child(7):before {
+  animation-delay: calc(-0.25s * 7);
+}
+.rmo-loader .active:nth-child(8):before {
+  animation-delay: calc(-0.25s * 8);
+}
+.rmo-loader .active:nth-child(9):before {
+  animation-delay: calc(-0.25s * 9);
+}
+.rmo-loader .active:nth-child(10):before {
+  animation-delay: calc(-0.25s * 10);
+}
+
+@keyframes rmoAnimate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+  0% {
+    filter: hue-rotate(0deg);
+  }
+}
