@@ -3,7 +3,6 @@ import "./randommove.css";
 
 let objList = Array(10).fill("");
 
-console.log(objList);
 function Randommove(props) {
   const [bg, setBg] = useState("Routine");
   const [active, setActive] = useState("");

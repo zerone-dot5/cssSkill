@@ -16,8 +16,6 @@ function Home(props) {
     setTitle(e);
   };
 
-  console.log(title);
-
   return (
     <div className="home-container">
       <HomeC1

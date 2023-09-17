@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
 }
 
 .g-container {
@@ -12,6 +11,7 @@
   width: 100%;
   min-height: 100vh;
   background: #000;
+  font-family: "poppins", sans-serif;
 }
 
 .g-container2 {

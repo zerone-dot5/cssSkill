@@ -25,6 +25,8 @@ import Iconbg from "./iconbg/iconbg";
 import Home from "./home/home";
 import Infinityloading from "./infinityloading/infinityloading";
 import Randommove from "./randommove/randommove";
+import Droprain from "./droprain/droprain";
+import Logintheme from "./logintheme/logintheme";
 
 function App() {
   const [active, setActive] = useState("");
@@ -61,6 +63,8 @@ function App() {
           <Route path="/iconbackground" element={<Iconbg />} />
           <Route path="/infinityloading" element={<Infinityloading />} />
           <Route path="/randommove" element={<Randommove />} />
+          <Route path="/droprain" element={<Droprain />} />
+          <Route path="/logintheme" element={<Logintheme />} />
         </Routes>
       </div>
     </BrowserRouter>

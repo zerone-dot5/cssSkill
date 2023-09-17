@@ -1,0 +1,130 @@
+.lt-container {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #111;
+  box-sizing: border-box;
+}
+
+.lt-box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lt-box i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+
+.lt-box:hover i {
+}
+
+.lt-box i:nth-child(1) {
+  border-radius: 43% 57% 74% 26% / 44% 30% 70% 56%;
+  animation: ltAnimate 6s linear infinite;
+}
+.lt-box i:nth-child(2) {
+  border-radius: 62% 38% 42% 58% / 52% 38% 62% 48%;
+  animation: ltAnimate 4s linear infinite;
+}
+.lt-box i:nth-child(3) {
+  border-radius: 44% 56% 42% 58% / 37% 65% 35% 63%;
+  animation: ltAnimate2 10s linear infinite;
+}
+
+@keyframes ltAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ltAnimate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.lt-box:hover i:nth-child(1) {
+  border: 6px solid #00ff0a;
+  box-shadow: 0 0 20px #00ff0a, inset 0 0 20px #00ff0a;
+}
+.lt-box:hover i:nth-child(2) {
+  border: 6px solid #ff0057;
+  box-shadow: 0 0 20px #ff0057, inset 0 0 20px #ff0057;
+}
+.lt-box:hover i:nth-child(3) {
+  border: 6px solid #fffd44;
+  box-shadow: 0 0 20px #fffd44, inset 0 0 20px #fffd44;
+}
+
+.lt-box .lt-login {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lt-box .lt-login h2 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.lt-box .lt-login .lt-inputBx {
+  position: relative;
+  width: 100%;
+}
+
+.lt-box .lt-login .lt-inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+}
+
+.lt-box .lt-login .lt-inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.lt-box .lt-login .lt-inputBx input[type="submit"] {
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+
+  cursor: pointer;
+  pointer-events: auto !important;
+}
+.lt-box .lt-login .lt-links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.lt-box .lt-login .lt-links a {
+  color: #fff;
+  text-decoration: none;
+}

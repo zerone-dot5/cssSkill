@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins" sans-serif;
 }
 :root {
   --size: 300px;
@@ -14,6 +13,7 @@
   width: 100%;
   min-height: 100vh;
   background: #2f363e;
+  font-family: "Poppins" sans-serif;
 }
 
 .sm-box {

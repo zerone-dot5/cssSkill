@@ -1,5 +1,4 @@
 * {
-  font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,6 +10,7 @@
   justify-content: center;
   min-height: 100vh;
   background: #434750;
+  font-family: "Oswald", sans-serif;
 }
 
 .im-container ul {

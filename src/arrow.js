@@ -20,6 +20,9 @@ function Arrow({ activeHandle }) {
   }, [location]);
 
   const arrowHandle = () => {
+    if (location.pathname === "/droprain") {
+      location.reload();
+    }
     activeHandle("");
   };
   return (
