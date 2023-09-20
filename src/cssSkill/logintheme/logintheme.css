@@ -24,9 +24,6 @@
   transition: 0.5s;
 }
 
-.lt-box:hover i {
-}
-
 .lt-box i:nth-child(1) {
   border-radius: 43% 57% 74% 26% / 44% 30% 70% 56%;
   animation: ltAnimate 6s linear infinite;

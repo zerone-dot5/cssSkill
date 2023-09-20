@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 let list = [
-  { x: -1, y: 0, icon: "IG", name: "IconBackGround" },
-  { x: 1, y: 0, icon: "IL", name: "InfinityLoading" },
-  { x: 0, y: -1, icon: "RMO", name: "RandomMove" },
-  { x: 0, y: 1, icon: "DR", name: "DropRain" },
-  { x: -1, y: 1, icon: "LT", name: "LoginTheme" },
+  { x: -1, y: 0, icon: "ts", name: "test" },
+  { x: 1, y: 0, icon: "", name: "" },
+  { x: 0, y: -1, icon: "", name: "" },
+  { x: 0, y: 1, icon: "", name: "" },
+  { x: -1, y: 1, icon: "", name: "" },
   { x: -1, y: -1, icon: "", name: "" },
   { x: 1, y: -1, icon: "", name: "" },
   { x: 1, y: 1, icon: "", name: "" },
 ];
 
-function HomeC3({ channel, channelHandle, titleHandle }) {
+function HomeW1({ channel, channelHandle, titleHandle }) {
   const [nav, setNav] = useState("");
   const [hover, setHover] = useState("");
 
   const navHandle = () => {
     setNav("active");
-    channelHandle(3);
+    channelHandle(4);
   };
 
   const closeHandle = () => {
@@ -26,23 +26,23 @@ function HomeC3({ channel, channelHandle, titleHandle }) {
     channelHandle("");
   };
 
+  useEffect(() => {
+    if (channel !== 4) {
+      setNav("");
+    }
+  }, [channel]);
+
   const HoverHanle = (e, item) => {
     setHover("hover");
     titleHandle(item.name);
   };
   const OutHandle = () => {
     setHover("");
-    titleHandle();
+    titleHandle("");
   };
 
-  useEffect(() => {
-    if (channel !== 3) {
-      setNav("");
-    }
-  }, [channel]);
-
   return (
-    <div className="homeC3-main">
+    <div className="homeW1-main">
       <ul className={`home-nav ${nav}`} onClick={navHandle}>
         {list.map((item, idx) => {
           return (
@@ -86,11 +86,11 @@ function HomeC3({ channel, channelHandle, titleHandle }) {
           );
         })}
       </ul>
-      <button className={`close3 ${nav}`} onClick={closeHandle}>
+      <button className={`closeW1 ${nav}`} onClick={closeHandle}>
         <ion-icon name="close-outline"></ion-icon>
       </button>
     </div>
   );
 }
 
-export default HomeC3;
+export default HomeW1;

@@ -1,36 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-
 let list = [
-  { x: -1, y: 0, icon: "CC", name: "ChangeCursor" },
-  { x: 1, y: 0, icon: "MA", name: "MenuAnimation" },
-  { x: 0, y: -1, icon: "NLB", name: "NeonLightBtn" },
-  { x: 0, y: 1, icon: "IM", name: "IsometricMenu" },
-  { x: -1, y: 1, icon: "TR", name: "TextRain" },
-  { x: -1, y: -1, icon: "NT", name: "NeonText" },
-  { x: 1, y: -1, icon: "SM", name: "StickyMemo" },
-  { x: 1, y: 1, icon: "FC", name: "FuturisticCard" },
+  { x: -1, y: 0, icon: "", name: "" },
+  { x: 1, y: 0, icon: "", name: "" },
+  { x: 0, y: -1, icon: "", name: "" },
+  { x: 0, y: 1, icon: "", name: "" },
+  { x: -1, y: 1, icon: "", name: "" },
+  { x: -1, y: -1, icon: "", name: "" },
+  { x: 1, y: -1, icon: "", name: "" },
+  { x: 1, y: 1, icon: "", name: "" },
 ];
 
-function HomeC1({ channel, channelHandle, titleHandle }) {
+function HomeC2({ channel, channelHandle, titleHandle }) {
   const [nav, setNav] = useState("");
   const [hover, setHover] = useState("");
 
   const navHandle = () => {
     setNav("active");
-    channelHandle(1);
+    channelHandle(5);
   };
 
   const closeHandle = () => {
     setNav("");
     channelHandle("");
   };
-
-  useEffect(() => {
-    if (channel !== 1) {
-      setNav("");
-    }
-  }, [channel]);
 
   const HoverHanle = (e, item) => {
     setHover("hover");
@@ -41,8 +34,13 @@ function HomeC1({ channel, channelHandle, titleHandle }) {
     titleHandle("");
   };
 
+  useEffect(() => {
+    if (channel !== 5) {
+      setNav("");
+    }
+  }, [channel]);
   return (
-    <div className="homeC1-main">
+    <div className="homeC2-main">
       <ul className={`home-nav ${nav}`} onClick={navHandle}>
         {list.map((item, idx) => {
           return (
@@ -86,11 +84,11 @@ function HomeC1({ channel, channelHandle, titleHandle }) {
           );
         })}
       </ul>
-      <button className={`close1 ${nav}`} onClick={closeHandle}>
+      <button className={`closeW2 ${nav}`} onClick={closeHandle}>
         <ion-icon name="close-outline"></ion-icon>
       </button>
     </div>
   );
 }
 
-export default HomeC1;
+export default HomeC2;
